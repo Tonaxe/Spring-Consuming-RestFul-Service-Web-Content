@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/5.2.3/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    <script type="text/javascript" th:src="@{/js/sports.js}"></script>
+    <title>Spotify Album Info</title>
+</head>
+
+<body>
+<div class="container-fluid bg-dark text-white d-flex justify-content-center">
+    <h2>Spotify Album Info</h2>
+</div>
+<div class="container mt-3">
+    <pre th:text="${albumInfo}"></pre>
+</div>
+</body>
+</html>
